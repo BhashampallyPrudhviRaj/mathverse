@@ -6,11 +6,11 @@
 ### 1. Document Control
 |     Field     |         Value            |
 |---------------|--------------------------|
-| Author        | Prudhvi Raj Bhashampally |
-| Version       | 1.0                      |
-| Status        | Draft                    |
-| Created       | 22-Feb-2026              |
-| Last Updated  | 23-Feb-2026              |
+|     Author    | Prudhvi Raj Bhashampally |
+|    Version    |          1.0             |
+|     Status    |         Draft            |
+|    Created    |       22-Feb-2026        |
+|  Last Updated |       23-Feb-2026        |
 
 ---
 
@@ -53,8 +53,8 @@ AI-powered math assistant and formula engine.
 |     Role      |    Name     |         Responsibility        |
 |---------------|-------------|-------------------------------|
 | Product Owner | Prudhvi Raj | Requirements & prioritization |
-| Tech Lead     | Prudhvi Raj | Architecture decisions        |
-| Developer     | Prudhvi Raj | Implementation                |
+|  Tech Lead    | Prudhvi Raj |    Architecture decisions     |
+|  Developer    | Prudhvi Raj |        Implementation         |
 
 ---
 

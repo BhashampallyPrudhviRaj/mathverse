@@ -109,6 +109,34 @@
 
 ---
 
+### US-007: Handling Out-of-Range Input Values
+**As a** student using MathVerse,
+**I want** to see a clear error message when I enter a number
+outside the supported range,
+**so that** I am not misled by silent overflow errors or 
+unexpected crashes, and I know exactly what correction to make.
+
+**Acceptance Criteria:**
+- AC-007-01: When A or B has an absolute value greater than 1×10¹⁵
+             (e.g., 9999999999999999), the result area displays:
+             "Value out of range. Please enter a number between
+             -1×10¹⁵ and 1×10¹⁵."
+- AC-007-02: The error message appears inline in the result area
+             (not a browser alert/popup)
+- AC-007-03: Both input fields retain their entered values after 
+             the error - the user does not lose their inputs
+- AC-007-04: The backend returns HTTP 400 Bad Request with body:
+             {
+                "error": "INPUT_OUT_OF_RANGE",
+                "message": "Input values must be within [-1×10¹⁵, 1×10¹⁵]",
+                "field": "a"
+             }
+
+**Priority:** P0
+**Story Points:** 2
+
+---
+
 ## Story Point Summary
 |   Story   | Points | Priority |
 |---------- |--------|----------|
@@ -118,4 +146,5 @@
 |   US-004  |    2   |    P0    |
 |   US-005  |    2   |    P0    |
 |   US-006  |    2   |    P0    |
-| **Total** | **13** |    -     |
+|   US-007  |    2   |    P0    |
+| **Total** | **15** |    -     |
